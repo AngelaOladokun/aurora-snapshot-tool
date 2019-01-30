@@ -15,12 +15,13 @@
 # been modified since the last time we uploaded to s3.
 
 # Override S3 destination by changing this variable or setting it in the
-# environment
+# environmentmake
+
 S3DEST?=cf-bucket-ltr
 
 # Set these if, for example, you use profiles on the AWS command line
 # or if your 'aws' executable is in a weird place.
-AWSARGS=--region [YOUR REGION] --profile [YOUR PROFILE, or 'default', or remove this]
+# AWSARGS=--region [YOUR REGION] --profile [YOUR PROFILE, or 'default', or remove this]
 AWSCMD=aws
 ZIPCMD=zip
 
