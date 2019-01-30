@@ -21,7 +21,7 @@ S3DEST?=cf-bucket-ltr
 
 # Set these if, for example, you use profiles on the AWS command line
 # or if your 'aws' executable is in a weird place.
-# AWSARGS=--region [YOUR REGION] --profile [YOUR PROFILE, or 'default', or remove this]
+AWSARGS=--region eu-west-1 
 AWSCMD=aws
 ZIPCMD=zip
 
