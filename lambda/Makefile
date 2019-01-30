@@ -7,16 +7,16 @@
 # Makefile for generating zip files for lambda functions and then copying them
 # to S3 for deployment. This Makefile will NOT WORK unless you fill in the S3DEST
 # and AWSARGS variables below. Once those parameters are established, simply type
-# 'make' or 'gmake' (depending on your UNIX-like OS) and it will build. 
+# 'make' or 'gmake' (depending on your UNIX-like OS) and it will build.
 #
-# Behaviour: 
+# Behaviour:
 # Creates a file named ._foo.whatever based on foo.whatever.Uploads foo.whatever to
 # the S3 bucket. The ._ file is a hack to figure out whether the file has
 # been modified since the last time we uploaded to s3.
 
 # Override S3 destination by changing this variable or setting it in the
 # environment
-S3DEST?=[YOUR BUCKET HERE]
+S3DEST?=cf-bucket-ltr
 
 # Set these if, for example, you use profiles on the AWS command line
 # or if your 'aws' executable is in a weird place.
